@@ -14,8 +14,8 @@ import { format } from "date-fns";
 import { CalendarIcon } from "lucide-react";
 import { Checkbox } from "../ui/checkbox";
 import { toast } from "sonner";
-import { z } from "zod";
 import { useCreateProject } from "hooks/use-projects";
+import z from "zod";
 
 interface CreateProjectDialogProps {
   isOpen: boolean;

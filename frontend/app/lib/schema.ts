@@ -1,5 +1,5 @@
-import { z } from "zod"
 import { ProjectStatus } from "types"
+import z from "zod"
 
 export const signInSchema = z.object({
     email: z.string().email("Invalid email address"),

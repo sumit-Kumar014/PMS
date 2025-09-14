@@ -9,8 +9,7 @@ import { Button } from "../ui/button";
 import { useCreateWorkspace } from "hooks/use-workspace";
 import { toast } from "sonner";
 import { useNavigate } from "react-router";
-import { z }from "zod";
-
+import z from "zod";
 interface CreateWorkspaceProps {
     isCreatingWorkspace: boolean;
     setIsCreatingWorkspace: (isCreatingWorkspace: boolean) => void;

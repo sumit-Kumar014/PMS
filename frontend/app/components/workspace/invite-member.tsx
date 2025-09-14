@@ -1,4 +1,4 @@
-import type { z } from "zod";
+import { z } from "zod";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "../ui/dialog";
 import { inviteMemberSchema } from "@/lib/schema";
 import { useForm } from "react-hook-form";
