@@ -1,9 +1,26 @@
-import { reactRouter } from "@react-router/dev/vite";
-import tailwindcss from "@tailwindcss/vite";
-import { defineConfig } from "vite";
-import tsconfigPaths from "vite-tsconfig-paths";
+import { defineConfig } from 'vite';
+import tsconfigPaths from 'vite-tsconfig-paths';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  base: '/', // or './' if assets not loading
-  plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
+  base: '/', // use './' if hosting on a subpath
+  plugins: [
+    tsconfigPaths(), // resolves tsconfig paths
+    tailwindcss() // TailwindCSS integration
+  ],
+  build: {
+    sourcemap: false, // disable sourcemaps in production to avoid errors
+  },
+  resolve: {
+    alias: {
+      // optional, if you want custom aliases
+      '@components': '/src/components',
+      '@utils': '/src/utils',
+      '@routes': '/src/routes',
+    },
+  },
+  server: {
+    port: 5173, // default Vite port
+    open: true, // automatically open in browser
+  },
 });
