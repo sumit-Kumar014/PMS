@@ -67,11 +67,7 @@ const SignIn = () => {
             Manage your projects, track progress, and stay productive with ease.
           </p>
           <div className="flex justify-center">
-            <img
-              src="/signin-illustration.svg"
-              alt="Sign in"
-              className="w-72 drop-shadow-lg"
-            />
+            
           </div>
         </div>
       </div>

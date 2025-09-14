@@ -72,11 +72,7 @@ const SignUp = () => {
             productivity.
           </p>
           <div className="flex justify-center">
-            <img
-              src="/signup-illustration.svg"
-              alt="Sign up"
-              className="w-72 drop-shadow-lg"
-            />
+            
           </div>
         </div>
       </div>
